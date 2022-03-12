@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="javascript/api.js"></script>
+    </head>
+
+    <body>
+        
+        <div id="left-column">
+
+            <!-- tab links -->
+            <div class="tab">
+                <button
+                    class="tablinks"
+                    onclick="openSection(event,'legs')"
+                >LEGS</button>
+
+                <button
+                    class="tablinks"
+                    onclick="openSection(event,'torso')"
+                >TORSO</button>
+                <button
+                    class="tablinks"
+                    onclick="openSection(event,'head')"
+                    id="defaultSection"
+                >HEAD</button>
+                <button
+                    class="tablinks"
+                    onclick="openSection(event,'emoji')"
+                >EMOJI</button>
+                <button
+                    class="tablinks"
+                    onclick="openSection(event,'done')"
+                ><strong>DONE</strong></button>
+            </div>
+
+            <!-- tab contents -->
+            <div id="legs" class="tabcontent">
+                <img class="draggable" src="images/funny-people-1/camila-cabello/lower-princess.png">
+                <img class="draggable" src="images/funny-people-1/harry-potter/legs-harry.png">
+                <img class="draggable" src="images/funny-people-1/jack-sparrow/legs-jack.png">
+                <img class="draggable" src="images/funny-people-1/lucifer/legs-luci.png">
+                <img class="draggable" src="images/funny-people-1/melissa-mccarthy/legs-mel.png">
+                <img class="draggable" src="images/funny-people-1/rock/legs-rock.png">
+                <img class="draggable" src="images/funny-people-1/spiderman/legs-tom.png">
+                <img class="draggable" src="images/funny-people-1/the-mask/legs-mask.png">
+            </div>
+            <div id="torso" class="tabcontent">
+                <img class="draggable" src="images/funny-people-1/camila-cabello/torso-princess.png">
+                <img class="draggable" src="images/funny-people-1/harry-potter/torso-harry.png">
+                <img class="draggable" src="images/funny-people-1/jack-sparrow/torso-jack.png">
+                <img class="draggable" src="images/funny-people-1/lucifer/torso-luci.png">
+                <img class="draggable" src="images/funny-people-1/melissa-mccarthy/torso-mel.png">
+                <img class="draggable" src="images/funny-people-1/rock/torso-rock.png">
+                <img class="draggable" src="images/funny-people-1/spiderman/torso-tom.png">
+                <img class="draggable" src="images/funny-people-1/the-mask/torso-mask.png">
+            </div>
+            <div id="head" class="tabcontent">
+                <img class="draggable" src="images/funny-people-1/camila-cabello/head-princess.png">
+                <img class="draggable" src="images/funny-people-1/harry-potter/head-harry.png">
+                <img class="draggable" src="images/funny-people-1/jack-sparrow/head-jack.png">
+                <img class="draggable" src="images/funny-people-1/lucifer/head-luci.png">
+                <img class="draggable" src="images/funny-people-1/melissa-mccarthy/head-mel.png">
+                <img class="draggable" src="images/funny-people-1/rock/head-rock.png">
+                <img class="draggable" src="images/funny-people-1/spiderman/head-tom.png">
+                <img class="draggable" src="images/funny-people-1/the-mask/head-mask.png">
+                
+                <div class="row">
+                    <img src="images/eyes_01.png" class="draggable">
+                    <img src="images/eyes_02.png" class="draggable">
+                    <img src="images/eyes_03.png" class="draggable">
+                    <img src="images/eyes_04.png" class="draggable">
+                    <img src="images/eyes_05.png" class="draggable">
+                    <img src="images/eyes_06.png" class="draggable">
+                    <img src="images/eyes_07.png" class="draggable">
+                    <img src="images/eyes_08.png" class="draggable">
+                
+                    <img src="images/glasses_01.png" class="draggable">
+                    <img src="images/glasses_02.png" class="draggable">
+                    <img src="images/glasses_03.png" class="draggable">
+                    <img src="images/glasses_04.png" class="draggable">
+                    <img src="images/glasses_05.png" class="draggable">
+                
+                    <img src="images/mouth_01.png" class="draggable">
+                    <img src="images/mouth_02.png" class="draggable">
+                    <img src="images/mouth_03.png" class="draggable">
+                    <img src="images/mouth_04.png" class="draggable">
+                    <img src="images/mouth_05.png" class="draggable">
+                    <img src="images/mouth_06.png" class="draggable">
+                    <img src="images/mouth_07.png" class="draggable">
+                    <img src="images/mouth_08.png" class="draggable">
+
+                    <img src="images/face-hair_01.png" class="draggable">
+                    <img src="images/face-hair_02.png" class="draggable">
+                    <img src="images/face-hair_03.png" class="draggable">
+                    <img src="images/face-hair_04.png" class="draggable">
+                    <img src="images/face-hair_05.png" class="draggable">
+
+                    <img src="images/hair_01.png" class="draggable">
+                    <img src="images/hair_02.png" class="draggable">
+                    <img src="images/hair_03.png" class="draggable">
+                    <img src="images/hair_04.png" class="draggable">
+                    <img src="images/hair_05.png" class="draggable">
+                    <img src="images/hair_06.png" class="draggable">
+                    <img src="images/hair_07.png" class="draggable">
+
+                    <img src="images/hat_01.png" class="draggable">
+                    <img src="images/hat_02.png" class="draggable">
+                    <img src="images/hat_03.png" class="draggable">
+                    <img src="images/hat_04.png" class="draggable">
+                    <img src="images/hat_05.png" class="draggable">
+                </div>
+
+            </div>
+            <div id="emoji" class="tabcontent">
+                <img class="draggable" src="images/funny-people-1/emoji/emoji-dead.png">
+                <img class="draggable" src="images/funny-people-1/emoji/emoji-funny.png">
+                <img class="draggable" src="images/funny-people-1/emoji/emoji-inlove.png">
+                <img class="draggable" src="images/funny-people-1/emoji/emoji-nerd.png">
+                <img class="draggable" src="images/funny-people-1/emoji/emoji-O.png">
+                <img class="draggable" src="images/funny-people-1/emoji/emoji-party.png">
+                <img class="draggable" src="images/funny-people-1/emoji/emoji-shocked.png">
+                <img class="draggable" src="images/funny-people-1/emoji/emoji-tongue.png">
+            </div>
+            <div id="done" class="tabcontent">
+                <h1>That's Hilarious.<br>WELL DONE!</h1>
+                <img src="images/funny-people-1/emoji/emoji-funny.png">
+                <p>(This tab stacks the images correctly when you're done.)</p>
+            </div>
+            
+        </div>
+
+        <div id="right-column">
+            <img src="images/funny-people-1/outline-2.png">
+            <img src="images/logo.png" id="logo">
+        </div>
+
+
+        <script>
+            function openSection(evt, section){
+                var i, tablinks, tabcontent;
+
+                tablinks = document.getElementsByClassName("tablinks");
+                tabcontent = document.getElementsByClassName("tabcontent");
+
+                for(i=0;i<tablinks.length;i++){
+                    tablinks[i].className = tablinks[i].className.replace(" active","");
+                }
+
+                for(i=0;i<tabcontent.length;i++){
+                    tabcontent[i].style.zIndex = "0";
+                }
+
+                document.getElementById(section).style.zIndex = "9";
+
+                evt.currentTarget.className += " active";
+
+                console.log("tablinks:\n" + tablinks);
+                console.log("tabcontent:\n" + tabcontent);
+                console.log("clicked: "+document.getElementById(section));
+            }
+
+            document.getElementById("defaultSection").click();
+        </script>
+
+
+    </body>
+
+</html>

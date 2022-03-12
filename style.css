@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: white;
+}
+
+#left-column{
+    width: 60%;
+    height: 100%;
+    float: left;
+    background-color: aqua;
+    margin: 10px;
+}
+
+#right-column img{
+    width: 300px;
+    margin-left: 100px;
+    margin-top: 80px;
+
+    opacity: 0.5;
+    position: absolute;
+    z-index: -500;
+}
+
+img#logo{
+    position: fixed;
+    width: 150px;
+    bottom: 20px;
+    right: 10px;
+} 
+
+.tabcontent{
+    width: 60%;
+    background-color: aqua;
+    position: absolute;
+    top: 68px;
+    left: 10px;
+    height: 210%;
+    border: 3px solid black;
+}
+
+.tab{
+    background-color: aqua;
+    width: 100%;
+    text-align: center;
+    border: 3px solid black;
+}
+
+.tab button.active{
+    background-color: #ccc;
+    color: black;
+}
+
+.tab button{
+    padding: 8px;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+    background-color: brown;
+
+}
+
+.tabcontent img{
+    float: left;
+}
+
+.row{
+    display: inline-block;
+}
+
+.row img{
+    padding-left: 5px;
+}
+
+h1, p{
+    color: white;
+    font-family: monospace;
+    padding: 30px;
+    text-align: center;
+}
+
+h1{
+    font-size: 36px;
+}
+
+p{
+    font-size: 24px;
+}
+
+#done.tabcontent{
+    float: none;
+    text-align: center;
+}
+
+#done.tabcontent img{
+    display: block;
+    float: none;
+    margin: auto;
+
+}

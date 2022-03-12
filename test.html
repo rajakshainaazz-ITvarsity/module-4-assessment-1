@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <style>
+            .tabcontent{
+                /* display: none; */
+                width: 50%;
+                background-color: aquamarine;
+                
+                position: absolute;
+                top: 40px;
+                left: 10px;
+                height: 80%;
+
+            }
+
+            .tab button.active{
+                background-color: #ccc;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- tab links -->
+        <div class="tab">
+            <button 
+                class="tablinks" 
+                onclick="openSection(event,'legs')">
+                LEGS
+            </button>
+            <button 
+                class="tablinks" 
+                onclick="openSection(event,'torso')">
+                TORSO
+            </button>
+            <button 
+                class="tablinks" 
+                onclick="openSection(event,'head')"
+                id="defaultSection">
+                HEAD
+            </button>
+        </div>
+
+        <!-- tab content -->
+        <div id="legs" class="tabcontent">
+            <img class="draggable" src="images/funny-people-1/camila-cabello/lower-princess.png">
+        </div>
+        <div id="torso" class="tabcontent">
+            <img class="draggable" src="images/funny-people-1/camila-cabello/torso-princess.png">
+        </div>
+        <div id="head" class="tabcontent">
+            <img class="draggable" src="images/funny-people-1/camila-cabello/head-princess.png">
+        </div>
+
+
+        <script>
+            function openSection(evt, part){
+                var i, tabcontent, tablinks;
+
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for(i=0;i<tabcontent.length;i++){
+                    // tabcontent[i].style.display="none";
+                    tabcontent[i].style.zIndex="0";
+                }
+
+                tablinks = document.getElementsByClassName("tablinks");
+                for(i=0;i<tablinks.length;i++){
+                    tablinks[i].className = tablinks[i].className.replace(" active","");
+                }
+
+                // document.getElementById(part).style.display = "block";
+                document.getElementById(part).style.zIndex = "9";
+
+                evt.currentTarget.className += " active";
+
+                console.log("tablinks:\n" + tablinks);
+                console.log("tabcontent:\n" + tabcontent);
+                console.log("clicked: "+document.getElementById(part));
+            }
+            document.getElementById("defaultSection").click();
+        </script>
+        <script type="text/javascript" src="javascript/api.js"></script>
+
+
+    </body>
+
+
+</html>
